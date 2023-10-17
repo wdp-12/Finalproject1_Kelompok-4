@@ -1,7 +1,6 @@
 # Whack a Chu - Final Project 1 🐹💛
 
 
-
 ## Deskripsi 
 
 
@@ -11,9 +10,6 @@
 ## Teknologi 
 
 
-## Penggunaan 
-
-
 ## Pengembang 
 
 - [Rozan Naufal Latukau]()
@@ -21,5 +17,5 @@
 - [Muhammad rangga saputra]()
 - [Jennifer Arianto]()
 
-## Grup 4 - Hacktiv8(MSIB - Web Developer)
+## Link Hosting
 
