@@ -10,7 +10,6 @@ Dalam permainan Whack a Chu, pemain diberi bola pokemon yang bertujuan untuk men
 
 ## Teknologi 
 - HTML, CSS, dan JavaScript untuk logika permainan.
-- Efek suara game untuk membuat permainan game menjadi lebih hidup.
 
 ## Pengembang 
 - [Rozan Naufal Latukau]()
