@@ -13,8 +13,8 @@ Dalam permainan Whack a Chu, pemain diberi bola pokemon yang bertujuan untuk men
 
 ## Pengembang 
 - [Rozan Naufal Latukau]()
-- [jihan azizah]()
-- [Muhammad rangga saputra]()
+- [Jihan Azizah]()
+- [Muhammad Rangga Saputra](https://instagram.com/ranggargs)
 - [Jennifer Arianto]()
 
 ## Link Hosting
