@@ -1,0 +1,124 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/img/bg3.jpeg);
+  background-size: 160%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Cute font", "Pokemon solid", "Pixelgamefont";
+  overflow: hidden;
+}
+
+.container {
+  margin: 0;
+}
+
+.btn {
+  padding: 5px;
+  background-color: #e70000;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.btn-b {
+  padding: 5px;
+  background-color: #12bc42;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 50px 15px 50px;
+}
+
+.text-center {
+  text-align: center;
+  padding: 0;
+}
+
+h1 {
+  font-size: 80px;
+  color: #faff03;
+  -webkit-text-stroke: 2px #000c75;
+  letter-spacing: 10px;
+  font-family: "PixelGameFont", sans-serif;
+}
+.row img {
+  width: 100px;
+  height: 100px;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 40vh;
+  cursor: url(../img/pokeball.png), auto;
+}
+
+.col .img {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.col .img:first-child {
+  margin-right: -5rem;
+}
+
+.col-2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: url(../img/pokeball.png), auto;
+}
+
+.col-2 .img {
+  position: relative;
+  margin: 0 -20px;
+  z-index: 1;
+  width: 20rem;
+  height: 20rem;
+}
+.img::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  background: url(/img/awan.png) bottom center no-repeat;
+  background-size: 100%;
+  bottom: -25px;
+}
+
+.pokemon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: top 0.3s;
+  background: url(/img/pokemon2.png) bottom center no-repeat;
+  background-size: 60%;
+  top: 120px;
+}
+.img.muncul .pokemon {
+  top: -170px;
+}
