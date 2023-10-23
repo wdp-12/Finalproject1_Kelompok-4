@@ -63,6 +63,7 @@ h1 {
   font-family: "Pokemon solid", sans-serif;
   padding-top: -10000px;
 }
+
 .row img {
   width: 100px;
   height: 100px;
@@ -82,6 +83,7 @@ h1 {
   width: 20rem;
   height: 20rem;
 }
+
 .img::after {
   content: "";
   display: block;
@@ -91,4 +93,86 @@ h1 {
   background: url(../img/awan.png) bottom center no-repeat;
   background-size: 100%;
   bottom: -25px;
+}
+
+.mode {
+  border-radius: 15px;
+  background:  #F6F6F6;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin: 100px 100px;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.choose {
+  font-family: "Cute font", sans-serif;
+  color: var(--Blue, #1684A7);
+  text-align: center;
+  font-family: Cute Font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button-mode {
+  letter-spacing: 10px;
+  font-family: "Pokemon solid", sans-serif;
+  text-align: center;
+}
+
+.btn-easy {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #FAFF03;
+  width: 9rem;
+  height: auto;
+  color: #E70000;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.btn-medium {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #1684A7;
+  width: 9rem;
+  height: auto;
+  color: #F6F6F6;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.btn-hard {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #E70000;
+  width: 9rem;
+  height: auto;
+  color: #F6F6F6;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.button-start {
+  letter-spacing: 10px;
+  font-family: "Pokemon solid", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.btn-start {
+  border-radius: 10px;
+  padding: px;
+  background-color: #12BC42;
+  width: 29rem;
+  height: auto;
+  color: #F6F6F6;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
 }
