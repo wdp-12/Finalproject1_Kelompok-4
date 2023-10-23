@@ -7,6 +7,11 @@ const gambarPokemon = ["/img/pokemon1.png", "/img/pokemon2.png", "/img/pokemon3.
 
 const awanElements = document.querySelectorAll(".img");
 
+const backsound = document.querySelector('#backsound');
+backsound.volume = 0.3;
+backsound.loop = true;
+backsound.play();
+
 for (let i = 0; i < awanElements.length; i++) {
   const awan = awanElements[i];
   const newImage = document.createElement("div");
@@ -19,12 +24,10 @@ for (let i = 0; i < awanElements.length; i++) {
 }
 
 const pokemon = document.querySelectorAll(".pokemon");
-console.log(pokemon);
 
 let tanahSebelumnya;
 let selesai;
 let skor;
-
 
 function randomAwan(awan) {
     const t = Math.floor(Math.random() * awan.length);
