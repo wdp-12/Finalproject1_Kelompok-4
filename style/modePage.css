@@ -1,75 +1,94 @@
-body {
+* {
+  text-decoration: none;
   margin: 0;
   padding: 0;
-  background: url(../img/bg3.jpeg) no-repeat;
-  background-size: cover;
-  flex-shrink: 0;
 }
 
-.exit {
-  margin-left: 5%;
-  margin-top: 1%;
-  width: 100px;
-  height: 50px;
-  flex-shrink: 0;
+body {
+  background-image: url(../img/bg3.jpeg);
+  background-size: 160%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Cute font", "Pokemon solid", "Pixelgamefont", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0;
+}
+
+.btn {
+  padding: 5px;
+  background-color: #e70000;
   border-radius: 100px;
-  background: #E70000;
-  box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.25) inset;
-  color: var(--White, #F6F6F6);
-  font-family: Cute Font;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
 }
 
-.Leaderboard {
-  margin-left: 67%;
-  margin-top: 1%;
-  width: 200px;
-  height: 50px;
-  flex-shrink: 0;
+.btn-b {
+  padding: 5px;
+  background-color: #12bc42;
   border-radius: 100px;
-  background: var(--Green, #12BC42);
-  box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.25) inset;
-  color: var(--White, #F6F6F6);
-  font-family: Cute Font;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  position: absolute;
-  border: none;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
 }
 
-.title {
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px 15px 50px;
+}
+
+.text-center {
   text-align: center;
-  margin-left: 18%;
-  width: 869px;
-  height: 158px;
-  flex-shrink: 0;
-  color: var(--Yellow, #FAFF03);
-  font-family: Pokemon Solid;
+  padding: 0;
+}
+
+h1 {
   font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 12px;
+  color: #faff03;
+  -webkit-text-stroke: 3px #e70000;
+  letter-spacing: 10px;
+  font-family: "Pokemon solid", sans-serif;
+  padding-top: -10000px;
+}
+.row img {
+  width: 100px;
+  height: 100px;
 }
 
-.pesawatl {
-  width: 512px;
-  height: 300px;
-  flex-shrink: 0;
-  float: left;
-  margin: 5px;
+.col-1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: url(../img/pokeball.png), auto;
 }
 
-.pesawatr {
-  width: 568px;
-  height: 300px;
-  flex-shrink: 0;
-  float: right;
-  margin: 5px;
+.col-1 .img {
+  position: relative;
+  margin: 0 -20px;
+  z-index: 1;
+  width: 20rem;
+  height: 20rem;
+}
+.img::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  background: url(../img/awan.png) bottom center no-repeat;
+  background-size: 100%;
+  bottom: -25px;
 }
