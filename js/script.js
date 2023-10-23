@@ -9,6 +9,7 @@ const awanElements = document.querySelectorAll(".img");
 
 const backsound = document.querySelector('#backsound');
 backsound.volume = 0.3;
+backsound.loop = true;
 backsound.play();
 
 for (let i = 0; i < awanElements.length; i++) {
