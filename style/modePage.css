@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg3.jpeg) no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.exit {
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #E70000;
+  box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.25) inset;
+  color: var(--White, #F6F6F6);
+  font-family: Cute Font;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+
+.Leaderboard {
+  margin-left: 67%;
+  margin-top: 1%;
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--Green, #12BC42);
+  box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.25) inset;
+  color: var(--White, #F6F6F6);
+  font-family: Cute Font;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  margin-left: 18%;
+  width: 869px;
+  height: 158px;
+  flex-shrink: 0;
+  color: var(--Yellow, #FAFF03);
+  font-family: Pokemon Solid;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12px;
+}
+
+.pesawatl {
+  width: 512px;
+  height: 300px;
+  flex-shrink: 0;
+  float: left;
+  margin: 5px;
+}
+
+.pesawatr {
+  width: 568px;
+  height: 300px;
+  flex-shrink: 0;
+  float: right;
+  margin: 5px;
+}
