@@ -42,6 +42,17 @@ body {
   font-family: "Cute font", sans-serif;
   font-size: 25px;
 }
+.btn-a {
+  padding: 5px;
+  background-color: #1684a7;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
 
 .row {
   display: flex;
@@ -121,4 +132,80 @@ h1 {
 }
 .img.muncul .pokemon {
   top: -170px;
+}
+.mode {
+  background-color: white;
+  border-radius: 15px;
+  width: 529px;
+  height: 210px;
+  padding: 10px 40px 10px 40px;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.isiMode {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.buttonMode {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  margin: 30px 0 0 0;
+}
+.buttonEasy {
+  padding: 15px 20px 15px 20px;
+  background-color: #faff03;
+  color: #e70000;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
+}
+
+.buttonMedium {
+  padding: 15px 20px 15px 20px;
+  background-color: #1684a7;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
+}
+
+.buttonHard {
+  padding: 15px 20px 15px 20px;
+  background-color: #e70000;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
+}
+
+.buttonSubmit {
+  margin: 30px 0 0 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #12bc42;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.buttonSubmit:hover {
+  background-color: black;
+  color: white;
+  cursor: url(../img/pokeball.png), auto;
+}
+.buttonEasy[aria-pressed="true"],
+.buttonMedium[aria-pressed="true"],
+.buttonHard[aria-pressed="true"] {
+  background-color: black;
+  color: white;
 }
