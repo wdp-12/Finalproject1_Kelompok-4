@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(../img/bg3.jpeg);
+  background-image: url(/img/bg3.jpeg);
   background-size: 160%;
   background-position: top;
   background-repeat: no-repeat;
