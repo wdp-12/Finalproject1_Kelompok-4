@@ -2,7 +2,7 @@
 const awan = document.querySelectorAll(".img");
 const score = document.querySelector(".score");
 const pop = document.querySelector('#pop');
-const gambarPokemon = ["/img/pokemon1.png", "/img/pokemon2.png", "/img/pokemon3.png"];
+const gambarPokemon = ["./img/pokemon1.png", "./img/pokemon2.png", "./img/pokemon3.png"];
 const awanElements = document.querySelectorAll(".img");
 
 // Membuat Sound aktif dan tidak aktif

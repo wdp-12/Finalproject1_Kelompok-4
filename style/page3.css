@@ -104,7 +104,7 @@ h1 {
   justify-content: center;
   overflow: hidden;
   height: 40vh;
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 
 .col .img {
@@ -121,7 +121,7 @@ h1 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 
 .col-2 .img {
@@ -137,7 +137,7 @@ h1 {
   width: 20rem;
   height: 20rem;
   position: absolute;
-  background: url(/img/awan.png) bottom center no-repeat;
+  background: url(../img/awan.png) bottom center no-repeat;
   background-size: 100%;
   bottom: -25px;
 }
@@ -147,7 +147,7 @@ h1 {
   height: 100%;
   position: absolute;
   transition: top 0.3s;
-  background: url(/img/pokemon2.png) bottom center no-repeat;
+  background: url(../img/pokemon2.png) bottom center no-repeat;
   background-size: 60%;
   top: 120px;
 }
@@ -182,7 +182,7 @@ h1 {
   border-radius: 10px;
   font-size: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 
 .buttonMedium {
@@ -193,7 +193,7 @@ h1 {
   border-radius: 10px;
   font-size: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 
 .buttonHard {
@@ -204,7 +204,7 @@ h1 {
   border-radius: 10px;
   font-size: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 
 .buttonSubmit {
@@ -222,7 +222,7 @@ h1 {
 .buttonSubmit:hover {
   background-color: black;
   color: white;
-  cursor: url(/img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), auto;
 }
 .buttonEasy[aria-pressed="true"],
 .buttonMedium[aria-pressed="true"],
