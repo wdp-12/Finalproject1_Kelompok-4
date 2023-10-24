@@ -211,7 +211,7 @@ function mulai() {
     munculkanPokemon(lihat, sembunyi);
     setTimeout(() => {
         selesai = true;
-    }, 30000);
+    }, 25000);
 }
 // ini untuk memperbarui skor ketika memukul pokemon
 function pukul() {
