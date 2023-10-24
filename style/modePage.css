@@ -42,7 +42,17 @@ body {
   font-family: "Cute font", sans-serif;
   font-size: 25px;
 }
-
+.btn-a {
+  padding: 5px;
+  background-color: #1684a7;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
 .row {
   display: flex;
   justify-content: space-between;

@@ -4,10 +4,32 @@ const score = document.querySelector(".score");
 const pop = document.querySelector('#pop');
 const gambarPokemon = ["/img/pokemon1.png", "/img/pokemon2.png", "/img/pokemon3.png"];
 const awanElements = document.querySelectorAll(".img");
+
+// Membuat Sound aktif dan tidak aktif
+const btnSound = document.getElementById("btnSound");
+let soundaktif = true;
 const backsound = document.querySelector('#backsound');
-backsound.volume = 0.3;
+backsound.volume = 0.5;
 backsound.loop = true;
 backsound.play();
+const soundIcon = btnSound.querySelector("i.fa-solid.fa-volume-high");
+btnSound.addEventListener('click', function() {
+    if (soundaktif) {
+        backsound.volume = 0.5;
+        backsound.loop = true;
+        backsound.pause();
+        soundaktif = false;
+        soundIcon.classList.remove("fa-volume-high");
+        soundIcon.classList.add("fa-volume-xmark");
+    } else {
+        backsound.volume = 0.5;
+        backsound.loop = true;
+        backsound.play();
+        soundaktif = true;
+        soundIcon.classList.remove("fa-volume-xmark");
+        soundIcon.classList.add("fa-volume-high");
+    }
+});
 
 // Membuat Pokemon muncul secara acak
 for (let i = 0; i < awanElements.length; i++) {
@@ -52,6 +74,8 @@ btnMode.addEventListener("click", function () {
                 buttonEasy.setAttribute("aria-pressed", "false");
             } else {
                 buttonEasy.setAttribute("aria-pressed", "true");
+                buttonMedium.setAttribute("aria-pressed", "false");
+                buttonHard.setAttribute("aria-pressed", "false");
             }
             console.log(isPressed);
         });
@@ -68,6 +92,8 @@ btnMode.addEventListener("click", function () {
                 buttonMedium.setAttribute("aria-pressed", "false");
             } else {
                 buttonMedium.setAttribute("aria-pressed", "true");
+                buttonEasy.setAttribute("aria-pressed", "false");
+                buttonHard.setAttribute("aria-pressed", "false");
             }
             console.log(isPressed);
         });
@@ -84,6 +110,8 @@ btnMode.addEventListener("click", function () {
                 buttonHard.setAttribute("aria-pressed", "false");
             } else {
                 buttonHard.setAttribute("aria-pressed", "true");
+                buttonEasy.setAttribute("aria-pressed", "false");
+                buttonMedium.setAttribute("aria-pressed", "false");
             }
             console.log(isPressed);
         });
@@ -168,12 +196,12 @@ function mulai() {
     const difficulty = difficultyLevel();
     if (difficulty === "easy") {
         lihat = 1000;
-        sembunyi = 3000;
+        sembunyi = 2000;
     } else if (difficulty === "medium") {
         lihat = 500;
-        sembunyi = 1500;
+        sembunyi = 1000;
     } else {
-        lihat = 200;
+        lihat = 300;
         sembunyi = 500;
     }
 
@@ -183,7 +211,7 @@ function mulai() {
     munculkanPokemon(lihat, sembunyi);
     setTimeout(() => {
         selesai = true;
-    }, 25000);
+    }, 30000);
 }
 // ini untuk memperbarui skor ketika memukul pokemon
 function pukul() {
@@ -199,3 +227,4 @@ pokemon.forEach(t => {
 });
 
 // JS Halaman 3 Akhir
+
