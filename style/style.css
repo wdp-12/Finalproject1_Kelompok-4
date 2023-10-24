@@ -1,0 +1,73 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(../img/bg1.jpeg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Cute font", "Pokemon solid", "Pixelgamefont", sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    margin: 0;
+  }
+  .btn {
+    padding: 5px;
+    background-color: #000fe7;
+    border-radius: 100px;
+    width: 25rem;
+    height: 5rem;
+    height: auto;
+    color: white;
+    font-size: 30px;
+    font-family: "Pixelgamefont", sans-serif;
+    box-shadow: 5px 5px 25px  yellow;
+  }
+  .save {
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 100px;
+    width: 10rem;
+    height: 5rem;
+    height: auto;
+    color: red;
+    font-size: 20px;
+    font-family: "Pixelgamefont", sans-serif;
+    box-shadow: 5px 5px 25px  #000fe7;
+    margin-bottom: 1cm;
+  }
+  .label {
+    padding: 5px;
+    background-color: white;
+    border-radius: 100px;
+    width: 15rem;
+    height: 5rem;
+    height: auto;
+    color: grey;
+    font-size: 20px;
+    font-family: "Pixelgamefont", sans-serif;
+    box-shadow: 5px 5px 25px  #000fe7;
+    margin-bottom: 1cm;
+  }
+  .img{
+    width: 200%;
+    margin-bottom: 2cm;
+    margin-left: -6cm;
+  }
+ 
+.form-container {
+    text-align: center;
+}
+
+.form-container div {
+    margin-bottom: 10px;
+}
