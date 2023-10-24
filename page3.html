@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/page3.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <link rel="icon" type="images/x-icon" href="img/pokemon1.png"/>
+    <script src="https://kit.fontawesome.com/1c50e73e27.js" crossorigin="anonymous"></script>
+    
     <title>Whack a Chu</title>
 </head>
 
@@ -15,11 +17,12 @@
     <div class="container">
        
         <div class="row">
-            <a><button type="submit" class="btn">Exit</button></a>
+            <button type="submit" class="btn">Exit</button>
             <img src="img/pokedexofmylife.gif" alt="pokemongif">
             <div>
-                <a><button type="submit" class="btn-a" id="btnMode">Mode</button></a>
-                <a><button type="submit" class="btn-b">Leaderboard</button></a>  
+                <button type="submit" class="btn-sound" id="btnSound"><i class="fa-solid fa-volume-high"></i></button>
+                <button type="submit" class="btn-a" id="btnMode">Mode</button>
+                <button type="submit" class="btn-b">Leaderboard</button>
             </div>
            
         </div>
@@ -39,8 +42,8 @@
         </div>
         <audio src="/audio/BacksoundGame.mp3" id="backsound"></audio>
         <audio src="/audio/soundpokemon.mp3" id="pop"></audio>
-        <script src="/js/script.js">
-        </script>
+        <script src="/js/script.js"></script>
+       
 </body>
 
 </html>

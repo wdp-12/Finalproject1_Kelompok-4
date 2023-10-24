@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,29 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-    <link rel="icon" type="images/x-icon" href="img/pokemon1.png"/>
+    <link rel="icon" type="images/x-icon" href="img/pokemon1.png" />
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-           <img src="img/welcome.png" alt="textwellcome" class="img">
-           </div>
-           <div class="row">
-             <div class="form-container">
-                <div>
-                    <div class="row">
-                    <input type="text" id="nama" name="nama" placeholder="Your Name" class="label">
-                    <button type="button" id="saveButton" class="save">SAVE</button>
-                </div>
-                </div>
-                <div>
-                   
-                </div>
+            <img src="img/welcome.png" alt="textwellcome" class="img">
+        </div>
+        <div class="col">
+            <div class="form-container">
+                <form class="row" id="form-input">
+                    <div class="input-name">
+                        <input type="text" id="nama" placeholder="Your Name" class="label">
+                    </div>
+                    <button type="submit" id="saveButton" class="save">SAVE</button>
+                </form>
             </div>
-            <a><button type="submit" class="btn" onclick="location.href='mode.html'">LET'S PLAY</button></a>
-            </div>
-            <audio autoplay loop>
-                <source src="audio/BacksoundGame.mp3" type="audio/mp3"/>
-            </audio>
-    <script src="/js/script.js"></script>
+            <button type="submit" class="btn" onclick="location.href='page3.html'">LET'S PLAY</button>
+        </div>
+        <audio autoplay loop>
+            <source src="/audio/BacksoundGame.mp3" type="audio/mp3" />
+        </audio>
+        <script src="/js/script.js"></script>
 </body>
 
 </html>
