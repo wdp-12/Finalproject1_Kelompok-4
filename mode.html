@@ -15,25 +15,24 @@
     <div class="container">
         <div class="row">
             <a><button type="submit" class="btn">Exit</button></a>
-             <img src="../img/pokedexofmylife.gif" alt="pokemongif"/>
+            <img src="../img/pokedexofmylife.gif" alt="pokemongif" />
             <a><button type="submit" class="btn-b">Leaderboard</button></a>
         </div>
         <div class="text-center">
             <h1>Whack a chu</h1>
         </div>
 
-        <div class="mode">
-            <div>
-                <p class="choose">Please choose the mode you prefer</p>
+        <div class="mode-center">
+            <div class="mode" id="mode">
+                <p class="isiMode">Please choose the mode you prefer</p>
+                <div class="buttonMode" id="buttonmode">
+                    <button class="buttonEasy" id="easy" aria-pressed="false">Easy</button>
+                    <button class="buttonMedium" id="medium" aria-pressed="false">Medium</button>
+                    <button class="buttonHard" id="hard" aria-pressed="false">Hard</button>
+                </div>
+                <button class="buttonSubmit">Start</button>
             </div>
-            <div class="button-mode">
-                <a><button class="btn-easy">Easy</button></a>
-                <a><button class="btn-medium">Medium</button></a> 
-                <a><button class="btn-hard">Hard</button></a> 
-            </div>
-            <div class="button-start">
-                <a><button class="btn-start">Start</button></a> 
-            </div>
+            
         </div>
 
         <div class="col-1">
@@ -45,9 +44,7 @@
         </div>
         <audio src="/audio/soundpokemon.mp3" id="pop"></audio>
     </div>
-    <script src="/js/script.js">
-    </script>
-
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

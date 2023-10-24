@@ -54,14 +54,13 @@ body {
   text-align: center;
   padding: 0;
 }
-
-h1 {
+.text-center h1 {
   font-size: 80px;
   color: #faff03;
   -webkit-text-stroke: 3px #e70000;
   letter-spacing: 10px;
   font-family: "Pokemon solid", sans-serif;
-  padding-top: -10000px;
+  line-height: 1;
 }
 
 .row img {
@@ -92,87 +91,87 @@ h1 {
   position: absolute;
   background: url(../img/awan.png) bottom center no-repeat;
   background-size: 100%;
-  bottom: -145px;
+  bottom: -15px;
 }
-
 .mode {
+  width: 529px;
+  height: 210px;
+  background-color: white;
   border-radius: 15px;
-  background:  #F6F6F6;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
-  margin: 100px 100px;
-  padding: 5px;
-  padding-top: 0;
+  padding: 10px 40px 10px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.choose {
-  font-family: "Cute font", sans-serif;
-  color: var(--Blue, #1684A7);
-  text-align: center;
-  font-family: Cute Font;
+.mode-center {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0 0;
+  cursor: url(../img/pokeball.png), auto;
+}
+.isiMode {
   font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.button-mode {
-  letter-spacing: 10px;
-  font-family: "Pokemon solid", sans-serif;
   text-align: center;
+  font-weight: bold;
 }
-
-.btn-easy {
+.buttonMode {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  margin: 30px 0 0 0;
+}
+.buttonEasy {
+  padding: 15px 20px 15px 20px;
+  background-color: #faff03;
+  color: #e70000;
+  border: 0;
   border-radius: 10px;
-  padding: 5px;
-  background-color: #FAFF03;
-  width: 9rem;
-  height: auto;
-  color: #E70000;
-  font-size: 18px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
 }
 
-.btn-medium {
+.buttonMedium {
+  padding: 15px 20px 15px 20px;
+  background-color: #1684a7;
+  border: 0;
+  color: white;
   border-radius: 10px;
-  padding: 5px;
-  background-color: #1684A7;
-  width: 9rem;
-  height: auto;
-  color: #F6F6F6;
-  font-size: 18px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
 }
 
-.btn-hard {
+.buttonHard {
+  padding: 15px 20px 15px 20px;
+  background-color: #e70000;
+  color: white;
+  border: 0;
   border-radius: 10px;
-  padding: 5px;
-  background-color: #E70000;
-  width: 9rem;
-  height: auto;
-  color: #F6F6F6;
-  font-size: 18px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: url(../img/pokeball.png), auto;
 }
 
-.button-start {
-  letter-spacing: 10px;
-  font-family: "Pokemon solid", sans-serif;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.btn-start {
+.buttonSubmit {
+  margin: 30px 0 0 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #12bc42;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
   border-radius: 10px;
-  padding: px;
-  background-color: #12BC42;
-  width: 29rem;
-  height: auto;
-  color: #F6F6F6;
-  font-size: 18px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.buttonSubmit:hover {
+  background-color: black;
+  color: white;
+  cursor: url(../img/pokeball.png), auto;
+}
+.buttonEasy[aria-pressed="true"],
+.buttonMedium[aria-pressed="true"],
+.buttonHard[aria-pressed="true"] {
+  background-color: black;
+  color: white;
 }
