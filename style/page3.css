@@ -248,7 +248,7 @@ h1 {
     border-radius: 100px;
     width: 7rem;
     height: auto;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Cute font", sans-serif;
   }
   .btn-sound {
@@ -256,7 +256,7 @@ h1 {
     border-radius: 100px;
     width: 7rem;
     height: auto;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Cute font", sans-serif;
   }
   .btn-a {
@@ -264,7 +264,7 @@ h1 {
     border-radius: 100px;
     width: 7rem;
     height: auto;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Cute font", sans-serif;
   }
   .btn-b {
@@ -272,7 +272,7 @@ h1 {
     border-radius: 100px;
     width: 7rem;
     height: auto;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Cute font", sans-serif;
   }
 
@@ -281,7 +281,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
   }
 
   .row .btn-nav.hidden {
