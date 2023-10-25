@@ -9,20 +9,20 @@ const awanElements = document.querySelectorAll(".img");
 const btnSound = document.getElementById("btnSound");
 let soundaktif = true;
 const backsound = document.querySelector('#backsound');
-backsound.volume = 0.5;
+backsound.volume = 0.2;
 backsound.loop = true;
 backsound.play();
 const soundIcon = btnSound.querySelector("i.fa-solid.fa-volume-high");
 btnSound.addEventListener('click', function() {
     if (soundaktif) {
-        backsound.volume = 0.5;
+        backsound.volume = 0.2;
         backsound.loop = true;
         backsound.pause();
         soundaktif = false;
         soundIcon.classList.remove("fa-volume-high");
         soundIcon.classList.add("fa-volume-xmark");
     } else {
-        backsound.volume = 0.5;
+        backsound.volume = 0.2;
         backsound.loop = true;
         backsound.play();
         soundaktif = true;
@@ -30,6 +30,11 @@ btnSound.addEventListener('click', function() {
         soundIcon.classList.add("fa-volume-high");
     }
 });
+const btn = document.querySelector(".btn")
+btn.addEventListener('click', function () {
+    window.location.href = "index.html"
+    
+})
 
 // Membuat Pokemon muncul secara acak
 for (let i = 0; i < awanElements.length; i++) {
@@ -95,7 +100,6 @@ btnMode.addEventListener("click", function () {
                 buttonEasy.setAttribute("aria-pressed", "false");
                 buttonHard.setAttribute("aria-pressed", "false");
             }
-            console.log(isPressed);
         });
 
         const buttonHard = document.createElement("button");
@@ -113,9 +117,7 @@ btnMode.addEventListener("click", function () {
                 buttonEasy.setAttribute("aria-pressed", "false");
                 buttonMedium.setAttribute("aria-pressed", "false");
             }
-            console.log(isPressed);
         });
-        console.log(buttonHard);
 
         const buttonSubmit = document.createElement("button");
         buttonSubmit.classList.add("buttonSubmit");
