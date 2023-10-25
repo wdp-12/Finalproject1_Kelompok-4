@@ -9,30 +9,35 @@
     <link rel="stylesheet" href="style/modePage.css">
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="img/pokemon1.png"/>
+    <script src="https://kit.fontawesome.com/1c50e73e27.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <a><button type="submit" class="btn">Exit</button></a>
-            <a><button type="submit" class="btn-b">Leaderboard</button></a>
+            <img src="img/pokedexofmylife.gif" alt="pokemongif" />
+            <div>
+                <button type="submit" class="btn-b">Leaderboard</button>
+            </div>
+            
         </div>
         <div class="text-center">
             <h1>Whack a chu</h1>
         </div>
 
-        <div class="mode">
-            <div>
-                <p class="choose">Please choose the mode you prefer</p>
+        <div class="mode-center">
+            <div class="mode" id="mode">
+                <p class="isiMode">Please choose the mode you prefer</p>
+                <div class="buttonMode" id="buttonmode">
+                    <button class="buttonEasy" id="easy" aria-pressed="false">Easy</button>
+                    <button class="buttonMedium" id="medium" aria-pressed="false">Medium</button>
+                    <button class="buttonHard" id="hard" aria-pressed="false">Hard</button>
+                </div>
+                <button class="buttonSubmit">Start</button>
             </div>
-            <div class="button-mode">
-                <a><button class="btn-easy">Easy</button></a>
-                <a><button class="btn-medium">Medium</button></a> 
-                <a><button class="btn-hard">Hard</button></a> 
-            </div>
-            <div class="button-start">
-                <a><button class="btn-start">Start</button></a> 
-            </div>
+            
         </div>
 
         <div class="col-1">
@@ -44,9 +49,10 @@
         </div>
         <audio src="/audio/soundpokemon.mp3" id="pop"></audio>
     </div>
-    <script src="/js/script.js">
-    </script>
-
+    <audio autoplay loop>
+        <source src="audio/modebacksound.mp3" type="audio/mp3"/>
+    </audio>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
