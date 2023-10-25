@@ -25,8 +25,6 @@ body {
   width: 9rem;
   height: auto;
   color: white;
-  font-size: 18px;
-  margin-right: 10px;
   font-family: "Cute font", sans-serif;
   font-size: 25px;
 }
@@ -84,7 +82,7 @@ body {
 
 .text-center {
   text-align: center;
-  padding: 0;
+  padding: 15px 0 0 0;
 }
 
 h1 {
@@ -230,15 +228,75 @@ h1 {
   background-color: black;
   color: white;
 }
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .row {
     align-items: flex-start;
     margin: 0;
+    flex-wrap: wrap;
   }
+  .row img {
+    display: none;
+  }
+  .btn {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 22px;
+    font-family: "Cute font", sans-serif;
+  }
+  .btn-sound {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 18px;
+    font-family: "Cute font", sans-serif;
+  }
+  .btn-a {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 22px;
+    font-family: "Cute font", sans-serif;
+  }
+  .btn-b {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 22px;
+    font-family: "Cute font", sans-serif;
+  }
+
   .btn-nav {
-    display: grid;
-    gap: 10px;
+    margin: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .row .btn-nav.hidden {
+    display: none;
+  }
+  .menu-icon {
+    color: white;
+    align-items: center;
+    display: flex;
+  }
+  .text-center {
+    padding: 20px 0 18px 0;
+  }
+  .text-center h1 {
+    font-size: 40px;
   }
   body {
     background-image: url(../img/bg3.jpeg);
@@ -250,32 +308,58 @@ h1 {
     margin: 20px;
   }
   .col {
-    height: 17vh;
+    height: 0vh;
   }
   .awan {
     align-items: center;
   }
+  .img {
+    width: 5rem;
+    height: 5rem;
+  }
   .img::after {
-    width: 100%;
+    width: 12rem;
+    height: 10rem;
     justify-content: center;
+    bottom: -25px;
   }
   .pokemon {
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 80%;
-    top: 2px;
+    width: 9rem;
+    height: 9rem;
+    top: -13px;
   }
   .img.muncul .pokemon {
-    top: -110px;
+    top: -70px;
   }
   .col-2 {
     display: flex;
     flex-wrap: wrap;
-
     align-items: center;
   }
-  .text-center h1 {
-    font-size: 50px;
+  .col-2 .img {
+    position: relative;
+    margin: 0 -20px;
+    z-index: 1;
+    width: 12rem;
+    height: 10rem;
+  }
+  .mode {
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: 180px;
+  }
+  .mode .isiMode {
+    font-size: 35px;
+    line-height: 25px;
+  }
+  .buttonMode {
+    margin: 15px 0 0 0;
+  }
+  .buttonSubmit {
+    margin: 20px 0 0 0;
   }
 }
