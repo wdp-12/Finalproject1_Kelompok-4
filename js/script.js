@@ -5,6 +5,14 @@ const pop = document.querySelector('#pop');
 const gambarPokemon = ["./img/pokemon1.png", "./img/pokemon2.png", "./img/pokemon3.png"];
 const awanElements = document.querySelectorAll(".img");
 
+const menuIcon = document.getElementById("menu-icon");
+const btnNav = document.getElementById("btn-nav");
+
+menuIcon.addEventListener("click",  function() {
+    btnNav.classList.toggle("hidden")
+})
+
+
 // Membuat Sound aktif dan tidak aktif
 const btnSound = document.getElementById("btnSound");
 let soundaktif = true;
@@ -33,7 +41,6 @@ btnSound.addEventListener('click', function() {
 const btn = document.querySelector(".btn")
 btn.addEventListener('click', function () {
     window.location.href = "index.html"
-    
 })
 
 // Membuat Pokemon muncul secara acak
