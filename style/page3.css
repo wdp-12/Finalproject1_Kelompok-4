@@ -104,7 +104,7 @@ h1 {
   justify-content: center;
   overflow: hidden;
   height: 40vh;
-  cursor: url(../img/pokeball.png), auto;
+  /* cursor: url(../img/pokeball.png), auto; */
 }
 
 .col .img {
@@ -152,7 +152,7 @@ h1 {
   top: 120px;
 }
 .img.muncul .pokemon {
-  top: -170px;
+  top: -165px;
 }
 .mode {
   background-color: white;
@@ -229,4 +229,53 @@ h1 {
 .buttonHard[aria-pressed="true"] {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    align-items: flex-start;
+    margin: 0;
+  }
+  .btn-nav {
+    display: grid;
+    gap: 10px;
+  }
+  body {
+    background-image: url(../img/bg3.jpeg);
+    background-size: 500%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 20px;
+  }
+  .col {
+    height: 17vh;
+  }
+  .awan {
+    align-items: center;
+  }
+  .img::after {
+    width: 100%;
+    justify-content: center;
+  }
+  .pokemon {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    top: 2px;
+  }
+  .img.muncul .pokemon {
+    top: -110px;
+  }
+  .col-2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+  }
+  .text-center h1 {
+    font-size: 50px;
+  }
 }
