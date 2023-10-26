@@ -6,7 +6,7 @@
 
 body {
   background-image: url(../img/bg1.jpeg);
-  background-size: 100%;
+  background-size: 200%;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -75,9 +75,35 @@ body {
   display: flex;
   flex-direction: column;
 }
+.btn-sound {
+  padding: 5px;
+  background-color: white;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.btn-sound i {
+  color: #000c75;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-audio {
+  display: flex;
+  gap: 6px;
+}
+
 @media screen and (max-width: 576px) {
   body {
-    background-size: 400%;
+    background-size: 500%;
   }
   .row .img {
     width: 20rem;
@@ -87,7 +113,6 @@ body {
   }
   .btn {
     width: 100%;
-    margin: 20px 0 0 0;
     font-size: 20px;
   }
   .label {
@@ -95,5 +120,13 @@ body {
   }
   .save {
     width: 7rem;
+  }
+  .btn-sound {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 20px;
+    font-family: "Cute font", sans-serif;
   }
 }
