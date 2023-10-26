@@ -92,6 +92,12 @@ h1 {
   letter-spacing: 10px;
   font-family: "PixelGameFont", sans-serif;
 }
+h2 {
+  font-size: 40px;
+  color: #000c75;
+  letter-spacing: 10px;
+  font-family: "cute font", sans-serif;
+}
 .row img {
   width: 100px;
   height: 100px;
@@ -297,6 +303,7 @@ h1 {
   .text-center h1 {
     font-size: 40px;
   }
+
   body {
     background-image: url(../img/bg3.jpeg);
     background-size: 500%;
