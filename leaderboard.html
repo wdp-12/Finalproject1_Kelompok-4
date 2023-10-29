@@ -50,14 +50,74 @@
   align-items: center;
   margin: 5px 50px 15px 50px;
 }
+
+#skorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+.skor-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.nama {
+    font-weight: bold;
+}
+
+.skor {
+    font-size: 1.2rem;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
     <div class="row">
-        <a><button type="submit" class="btn">Exit</button></a>
-        <a><button type="submit" class="btn-b">Main lagi</button></a>
+        <a><button type="submit" class="btn" onclick="location.href='index.html'">Exit</button></a>
+        <a><button type="submit" class="btn-b" onclick="location.href='page3.html'">Main lagi</button></a>
+    </div>
+    <div id="skorContainer">
+      <!-- Daftar skor akan ditampilkan di sini -->
     </div>
     </div>
+    <script>
+      // Mendapatkan daftar skor dari local storage
+const skorList = JSON.parse(localStorage.getItem("skorList")) || [];
+
+// Fungsi untuk menampilkan daftar skor sebagai kartu
+function tampilkanSkor() {
+    const skorContainer = document.getElementById("skorContainer");
+    skorContainer.innerHTML = ""; // Hapus konten sebelumnya
+
+    if (skorList.length > 0) {
+        skorList.forEach((skorData, index) => {
+            const card = document.createElement("div");
+            card.classList.add("skor-card");
+            card.innerHTML = `
+                <span class="nama">${skorData.nama}</span>
+                <span class="skor">${skorData.skor}</span>
+            `;
+            skorContainer.appendChild(card);
+        });
+    } else {
+        skorContainer.innerHTML = "Belum ada skor tersimpan.";
+    }
+}
+
+// Panggil fungsi untuk menampilkan skor saat halaman dimuat
+tampilkanSkor();
+
+    </script>
 </body>
 </html>

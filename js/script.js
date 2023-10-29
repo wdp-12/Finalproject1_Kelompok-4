@@ -241,6 +241,6 @@ pokemon.forEach(t => {
 const namaPemain = localStorage.getItem("namaPemain");
 if (namaPemain) {
     let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
-    skorList.push({ nama: namaPemain, skor: skor });
+    skorList.push({ nama: namaPemain, skor: score });
     localStorage.setItem("skorList", JSON.stringify(skorList));
 }
