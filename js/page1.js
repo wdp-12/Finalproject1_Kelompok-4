@@ -21,3 +21,26 @@ btnAudio.addEventListener('click', function() {
         audioIcon.classList.add("fa-volume-high");
     }
 });
+
+// Mengambil elemen-elemen dari DOM
+const namaInput = document.getElementById("namaPemain");
+
+const simpanButton = document.getElementById("simpanNama");
+
+// Mendapatkan daftar nama pemain dari local storage
+let namaPemainList = JSON.parse(localStorage.getItem("namaPemainList")) || [];
+
+// Menambahkan event listener pada tombol "Simpan Nama"
+simpanButton.addEventListener("click", function() {
+    const nama = namaInput.value;
+    if (nama) {
+        let namaPemainList = {
+            nama:nama
+        }
+        localStorage.setItem("namaPemainList", JSON.stringify(namaPemainList));
+        alert("Nama pemain telah disimpan!");
+    } else {
+        alert("Harap masukkan nama sebelum menyimpan.");
+    }
+});
+

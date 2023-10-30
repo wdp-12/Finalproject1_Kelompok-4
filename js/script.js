@@ -237,3 +237,16 @@ pokemon.forEach(t => {
 
 // JS Halaman 3 Akhir
 
+let namaPemainList = JSON.parse(localStorage.getItem("namaPemainList")) || [];
+const namaLocal = document.getElementById("localNama");
+namaLocal.textContent = namaPemainList.nama;
+
+// const namaPemain = localStorage.getItem("namaPemain");
+// namaLocal.textContent = namaPemain;
+// namaLocal.value = namaPemainList.nama
+// if (namaPemain) {
+//     let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
+//     skorList.push({ nama: namaPemain, skor: skor });
+//     localStorage.setItem("skorList", JSON.stringify(skorList));
+// }
+

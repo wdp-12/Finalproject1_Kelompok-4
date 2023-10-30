@@ -2,9 +2,9 @@
 
 
 ## Deskripsi 
-Aturan Permainan :
-Setiap pemain yang menangkap pokemon akan mendapatkan 1 poin
-Waktu permainan adalah 3 menit
+- Aturan Permainan:
+- Setiap pemain yang menangkap pokemon akan mendapatkan 1 poin.
+- Waktu permainan adalah 3 menit.
 
 ## Fitur 
 - Tingkat kesulitan: Easy, Medium, Hard.
