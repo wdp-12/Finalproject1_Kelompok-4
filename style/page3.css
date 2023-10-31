@@ -143,7 +143,7 @@ h2 {
   position: absolute;
   background: url(../img/awan.png) bottom center no-repeat;
   background-size: 100%;
-  bottom: -25px;
+  bottom: 30px;
 }
 
 .pokemon {
@@ -156,7 +156,7 @@ h2 {
   top: 120px;
 }
 .img.muncul .pokemon {
-  top: -165px;
+  top: -200px;
 }
 .mode {
   background-color: white;

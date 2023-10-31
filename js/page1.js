@@ -24,6 +24,7 @@ btnAudio.addEventListener('click', function() {
 
 // Mengambil elemen-elemen dari DOM
 const namaInput = document.getElementById("namaPemain");
+
 const simpanButton = document.getElementById("simpanNama");
 
 // Mendapatkan daftar nama pemain dari local storage
@@ -33,7 +34,9 @@ let namaPemainList = JSON.parse(localStorage.getItem("namaPemainList")) || [];
 simpanButton.addEventListener("click", function() {
     const nama = namaInput.value;
     if (nama) {
-        namaPemainList.push(nama);
+        let namaPemainList = {
+            nama:nama
+        }
         localStorage.setItem("namaPemainList", JSON.stringify(namaPemainList));
         alert("Nama pemain telah disimpan!");
     } else {
