@@ -17,7 +17,7 @@
 ## Pengembang 
 - [Rozan Naufal Latukau]()
 - [Jihan Azizah]()
-- [Muhammad Rangga Saputra](https://instagram.com/ranggargs)
+- [Muhammad Rangga Saputra](https://instagram.com/rangga_rgs)
 - [Jennifer Arianto]()
 
 ## Link Hosting
