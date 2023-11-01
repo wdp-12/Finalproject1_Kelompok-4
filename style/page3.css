@@ -29,7 +29,7 @@ body {
   font-size: 25px;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #c00505;
 }
 
@@ -45,7 +45,7 @@ body {
   font-size: 25px;
 }
 
-.btn-b:hover{
+.btn-b:hover {
   background-color: #0da137;
 }
 
@@ -61,7 +61,7 @@ body {
   font-size: 25px;
 }
 
-.btn-a:hover{
+.btn-a:hover {
   background-color: #0c5d75;
 }
 
@@ -80,7 +80,7 @@ body {
   align-items: center;
 }
 
-.btn-sound:hover{
+.btn-sound:hover {
   background-color: rgb(231, 220, 220);
 }
 
@@ -126,8 +126,7 @@ h2 {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  height: 40vh;
-  /* cursor: url(../img/pokeball.png), auto; */
+  height: 20vh;
 }
 
 .col .img {
@@ -144,7 +143,7 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  cursor: url(../img/pokeball.png), pointer;
+  height: 70vh;
 }
 
 .col-2 .img {
@@ -209,7 +208,7 @@ h2 {
   cursor: pointer;
 }
 
-.buttonEasy:hover{
+.buttonEasy:hover {
   background-color: #cccf06;
 }
 
@@ -224,7 +223,7 @@ h2 {
   cursor: pointer;
 }
 
-.buttonMedium:hover{
+.buttonMedium:hover {
   background-color: #0f647e;
 }
 
@@ -239,7 +238,7 @@ h2 {
   cursor: pointer;
 }
 
-.buttonHard:hover{
+.buttonHard:hover {
   background-color: #a10303;
 }
 
@@ -254,7 +253,6 @@ h2 {
   border: 0;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-
 }
 .buttonSubmit:hover {
   background-color: black;
@@ -271,6 +269,15 @@ h2 {
   font-size: 30px;
   color: white;
   display: none;
+}
+.notiftime {
+  padding: 50px 0 50px 0;
+  background-color: white;
+}
+.time {
+  font-size: 40px;
+  color: #faff03;
+  -webkit-text-stroke: 2px #000c75;
 }
 
 @media screen and (max-width: 576px) {
@@ -331,7 +338,7 @@ h2 {
     display: flex;
   }
   .text-center {
-    padding: 20px 0 18px 0;
+    padding: 20px 0 0px 0;
   }
   .text-center h1 {
     font-size: 40px;
@@ -347,7 +354,7 @@ h2 {
     margin: 20px;
   }
   .col {
-    height: 0vh;
+    height: 5vh;
   }
   .awan {
     align-items: center;
@@ -400,5 +407,10 @@ h2 {
   }
   .buttonSubmit {
     margin: 20px 0 0 0;
+  }
+  .time {
+    font-size: 40px;
+    color: #faff03;
+    -webkit-text-stroke: 2px #000c75;
   }
 }
