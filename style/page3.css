@@ -209,6 +209,10 @@ h2 {
   cursor: url(../img/pokeball.png), auto;
 }
 
+.buttonEasy:hover{
+  background-color: #cccf06;
+}
+
 .buttonMedium {
   padding: 15px 20px 15px 20px;
   background-color: #1684a7;
@@ -220,6 +224,10 @@ h2 {
   cursor: url(../img/pokeball.png), auto;
 }
 
+.buttonMedium:hover{
+  background-color: #0f647e;
+}
+
 .buttonHard {
   padding: 15px 20px 15px 20px;
   background-color: #e70000;
@@ -229,6 +237,10 @@ h2 {
   font-size: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   cursor: url(../img/pokeball.png), auto;
+}
+
+.buttonHard:hover{
+  background-color: #a10303;
 }
 
 .buttonSubmit {
