@@ -207,21 +207,38 @@ function mulai() {
         lihat = 1000;
         sembunyi = 2000;
     } else if (difficulty === "medium") {
-        lihat = 500;
+        lihat = 400;
         sembunyi = 1000;
     } else {
-        lihat = 300;
+        lihat = 200;
         sembunyi = 500;
     }
 
     selesai = false;
     skor = 0;
     score.textContent = 0;
+
+    const timers = 2;
+    let time = timers * 60;
+
+    const timeMenit = document.getElementById("timemenit");
+
+    function updateTime() {
+        const menit = Math.floor(time / 60);
+        let detik = time % 60;
+
+        detik = detik < 2 ? '' + detik : detik;
+        timeMenit.innerHTML = `${menit} : ${detik}`;
+        time--;
+        if (time < 0) {
+            clearInterval(waktuInterval);
+            selesai = true;
+        } 
+    }
+    const waktuInterval = setInterval(updateTime, 1000);
     munculkanPokemon(lihat, sembunyi);
-    setTimeout(() => {
-        selesai = true;
-    }, 25000);
 }
+
 // ini untuk memperbarui skor ketika memukul pokemon
 function pukul() {
     skor++;
