@@ -30,6 +30,16 @@ body {
   font-size: 30px;
   font-family: "Pixelgamefont", sans-serif;
   box-shadow: 5px 5px 25px yellow;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #000fe7;
+}
+
+.btn:disabled{
+  cursor: not-allowed;
 }
 .save {
   padding: 10px;
@@ -41,7 +51,14 @@ body {
   font-size: 20px;
   font-family: "Pixelgamefont", sans-serif;
   box-shadow: 5px 5px 25px #000fe7;
+  cursor: pointer;
 }
+
+.save:hover{
+  background-color: red;
+  color: yellow;
+}
+
 .label {
   padding: 10px;
   background-color: white;
