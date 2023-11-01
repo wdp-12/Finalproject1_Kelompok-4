@@ -29,6 +29,10 @@ body {
   font-size: 25px;
 }
 
+.btn:hover{
+  background-color: #c00505;
+}
+
 .btn-b {
   padding: 5px;
   background-color: #12bc42;
@@ -40,6 +44,11 @@ body {
   font-family: "Cute font", sans-serif;
   font-size: 25px;
 }
+
+.btn-b:hover{
+  background-color: #0da137;
+}
+
 .btn-a {
   padding: 5px;
   background-color: #1684a7;
@@ -51,6 +60,11 @@ body {
   font-family: "Cute font", sans-serif;
   font-size: 25px;
 }
+
+.btn-a:hover{
+  background-color: #0c5d75;
+}
+
 .btn-sound {
   padding: 5px;
   background-color: white;
@@ -65,6 +79,11 @@ body {
   text-decoration: none;
   align-items: center;
 }
+
+.btn-sound:hover{
+  background-color: rgb(231, 220, 220);
+}
+
 .btn-sound i {
   color: #000c75;
   justify-content: center;
@@ -178,6 +197,7 @@ h2 {
   justify-content: space-around;
   margin: 30px 0 0 0;
 }
+
 .buttonEasy {
   padding: 15px 20px 15px 20px;
   background-color: #faff03;
