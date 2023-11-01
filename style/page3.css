@@ -107,8 +107,7 @@ h2 {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  height: 40vh;
-  /* cursor: url(../img/pokeball.png), auto; */
+  height: 20vh;
 }
 
 .col .img {
@@ -125,6 +124,7 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  height: 65vh;
   cursor: url(../img/pokeball.png), auto;
 }
 
@@ -239,6 +239,15 @@ h2 {
   color: white;
   display: none;
 }
+.notiftime {
+  padding: 50px 0 50px 0;
+  background-color: white;
+}
+.time {
+  font-size: 40px;
+  color: #faff03;
+  -webkit-text-stroke: 2px #000c75;
+}
 
 @media screen and (max-width: 576px) {
   .row {
@@ -298,7 +307,7 @@ h2 {
     display: flex;
   }
   .text-center {
-    padding: 20px 0 18px 0;
+    padding: 20px 0 0px 0;
   }
   .text-center h1 {
     font-size: 40px;
@@ -314,7 +323,7 @@ h2 {
     margin: 20px;
   }
   .col {
-    height: 0vh;
+    height: 5vh;
   }
   .awan {
     align-items: center;
@@ -367,5 +376,10 @@ h2 {
   }
   .buttonSubmit {
     margin: 20px 0 0 0;
+  }
+  .time {
+    font-size: 40px;
+    color: #faff03;
+    -webkit-text-stroke: 2px #000c75;
   }
 }
