@@ -125,7 +125,7 @@ h2 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  cursor: url(../img/pokeball.png), auto;
+  cursor: url(../img/pokeball.png), pointer;
 }
 
 .col-2 .img {
