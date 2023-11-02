@@ -58,6 +58,35 @@
   margin: 5px 50px 15px 50px;
 }
 
+h1 {
+    color: #333;
+    margin-left: 515px;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
     </style>
 </head>
 <body>
@@ -67,11 +96,41 @@
         <a><button type="submit" class="btn-b" onclick="location.href='page3.html'">Main lagi</button></a>
     </div>
     <div id="skorContainer">
-      <!-- Daftar skor akan ditampilkan di sini -->
+      <h1>Leaderboard Game</h1>
+      <table id="leaderboard">
+          <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+          </tr>
+      </table>
     </div>
     </div>
     <script>
-      // Mendapatkan daftar skor dari local storage
+      document.addEventListener("DOMContentLoaded", function () {
+    // Ambil data leaderboard dari local storage
+    const leaderboardData = JSON.parse(localStorage.getItem("skorList")) || [];
+
+    // Urutkan data leaderboard berdasarkan skor tertinggi
+    leaderboardData.sort((a, b) => b.score - a.score);
+
+    // Ambil 5 skor tertinggi
+    const top5Scores = leaderboardData.slice(0, 5);
+
+    // Tampilkan data leaderboard di tabel
+    const leaderboardTable = document.getElementById("leaderboard");
+
+    for (let i = 0; i < top5Scores.length; i++) {
+        const row = leaderboardTable.insertRow(i + 1);
+        const rankCell = row.insertCell(0);
+        const nameCell = row.insertCell(1);
+        const scoreCell = row.insertCell(2);
+
+        rankCell.textContent = i + 1;
+        nameCell.textContent = top5Scores[i].nama;
+        scoreCell.textContent = top5Scores[i].score;
+    }
+});
 
     </script>
 </body>
