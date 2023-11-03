@@ -270,14 +270,11 @@ namaLocal.textContent = namaPemainList.nama;
 
 let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
 
-// Cari pemain dengan nama yang sama dalam skorList
-const pemainBermainIndex = skorList.findIndex(item => item.nama.nama === namaPemainList.nama);
+const player = skorList.findIndex(item => item.nama.nama === namaPemainList.nama);
 
-if (pemainBermainIndex !== -1) {
-    // Jika pemain sudah ada, perbarui skornya
-    skorList[pemainBermainIndex].skor = skor;
+if (player !== -1) {
+    skorList[player].skor = skor;
 } else {
-    // Jika pemain belum ada, tambahkan pemain baru ke skorList
     skorList.push({ nama: namaPemainList, skor: skor });
 }
 
