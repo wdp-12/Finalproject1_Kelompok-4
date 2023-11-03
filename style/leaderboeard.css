@@ -1,0 +1,134 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/bg2.jpeg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.btn {
+  padding: 5px;
+  background-color: #e70000;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+.btn:hover {
+  background-color: #c00505;
+}
+
+.btn-b {
+  padding: 5px;
+  background-color: #12bc42;
+  border-radius: 100px;
+  width: 9rem;
+  height: auto;
+  color: white;
+  font-size: 18px;
+  font-family: "Cute font", sans-serif;
+  font-size: 25px;
+}
+
+.btn-b:hover {
+  background-color: #0da137;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 33px 50px 15px 50px;
+  font-family: "Cute font", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  color: #faff03;
+  -webkit-text-stroke: 2px #000c75;
+  letter-spacing: 10px;
+  font-family: "PixelGameFont", sans-serif;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: "Cute font", sans-serif;
+  font-size: 24px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  body {
+    background-size: 500%;
+  }
+  .btn {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 20px;
+    font-family: "Cute font", sans-serif;
+  }
+  .btn-a {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 20px;
+    font-family: "Cute font", sans-serif;
+  }
+  .btn-b {
+    padding: 2px;
+    border-radius: 100px;
+    width: 7rem;
+    height: auto;
+    font-size: 20px;
+    font-family: "Cute font", sans-serif;
+  }
+  .row {
+    margin: 20px 30px 20px 30px;
+  }
+  h1 {
+    margin: 30px 30px 0 30px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  th,
+  td {
+    padding: 25px;
+    text-align: center;
+  }
+}

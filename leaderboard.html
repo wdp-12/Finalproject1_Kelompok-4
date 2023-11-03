@@ -4,90 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/leaderboeard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="img/pokemon1.png" />
+    <script src="https://kit.fontawesome.com/1c50e73e27.js" crossorigin="anonymous"></script>
     <title>Whack a chu</title>
-    <style>
-        * {
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-        background-image: url(../Finalproject1_Kelompok-4/img/bg2.jpeg);
-        background-size: 100%;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        }
-        .btn {
-  padding: 5px;
-  background-color: #e70000;
-  border-radius: 100px;
-  width: 9rem;
-  height: auto;
-  color: white;
-  font-size: 18px;
-  margin-right: 10px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
-}
-.btn:hover{
-  background-color: #c00505;
-}
-
-.btn-b {
-  padding: 5px;
-  background-color: #12bc42;
-  border-radius: 100px;
-  width: 9rem;
-  height: auto;
-  color: white;
-  font-size: 18px;
-  font-family: "Cute font", sans-serif;
-  font-size: 25px;
-}
-
-.btn-b:hover{
-  background-color: #0da137;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px 50px 15px 50px;
-}
-
-h1 {
-    color: #333;
-    margin-left: 515px;
-}
-
-table {
-    width: 50%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #333;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-th {
-    background-color: #333;
-    color: white;
-}
-
-    </style>
 </head>
 <body>
     <div class="container">
@@ -106,32 +27,9 @@ th {
       </table>
     </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-    // Ambil data leaderboard dari local storage
-    const leaderboardData = JSON.parse(localStorage.getItem("skorList")) || [];
-
-    // Urutkan data leaderboard berdasarkan skor tertinggi
-    leaderboardData.sort((a, b) => b.score - a.score);
-
-    // Ambil 5 skor tertinggi
-    const top5Scores = leaderboardData.slice(0, 5);
-
-    // Tampilkan data leaderboard di tabel
-    const leaderboardTable = document.getElementById("leaderboard");
-
-    for (let i = 0; i < top5Scores.length; i++) {
-        const row = leaderboardTable.insertRow(i + 1);
-        const rankCell = row.insertCell(0);
-        const nameCell = row.insertCell(1);
-        const scoreCell = row.insertCell(2);
-
-        rankCell.textContent = i + 1;
-        nameCell.textContent = top5Scores[i].nama;
-        scoreCell.textContent = top5Scores[i].score;
-    }
-});
-
+    <audio autoplay loop id="backsoundgame">
+        <source src="audio/BacksoundGame.mp3" type="audio/mp3">
+    <script src="js/leaderboard.js">
     </script>
 </body>
 </html>
