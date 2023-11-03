@@ -240,11 +240,22 @@ function mulai() {
 }
 
 // ini untuk memperbarui skor ketika memukul pokemon
+
 function pukul() {
     skor++;
     this.parentNode.classList.remove('muncul');
     pop.play();
     score.textContent = skor;
+
+    let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
+    
+    skorList.forEach(function(item) {
+        if (item.nama.nama === namaPemainList.nama) {
+            item.skor = skor;
+        }
+      });
+   
+    localStorage.setItem("skorList", JSON.stringify(skorList));
 }
 
 // Menambahkan trigger klik ke semua pokemon
@@ -253,18 +264,23 @@ pokemon.forEach(t => {
 });
 
 // JS Halaman 3 Akhir
-
 let namaPemainList = JSON.parse(localStorage.getItem("namaPemainList")) || [];
 const namaLocal = document.getElementById("localNama");
 namaLocal.textContent = namaPemainList.nama;
 
-const skore = parseInt(document.querySelector(".score").textContent.replace("Skor: ", ""));
+let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
 
-if (namaPemainList) {
-    let skorList = JSON.parse(localStorage.getItem("skorList")) || [];
-    skorList.push({ nama: namaPemainList, skor: skore });
-    localStorage.setItem("skorList", JSON.stringify(skorList));
+// Cari pemain dengan nama yang sama dalam skorList
+const pemainBermainIndex = skorList.findIndex(item => item.nama.nama === namaPemainList.nama);
+
+if (pemainBermainIndex !== -1) {
+    // Jika pemain sudah ada, perbarui skornya
+    skorList[pemainBermainIndex].skor = skor;
+} else {
+    // Jika pemain belum ada, tambahkan pemain baru ke skorList
+    skorList.push({ nama: namaPemainList, skor: skor });
 }
 
+localStorage.setItem("skorList", JSON.stringify(skorList));
 
 
