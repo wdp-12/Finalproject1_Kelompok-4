@@ -233,12 +233,13 @@ function mulai() {
         if (time < 0) {
             clearInterval(waktuInterval);
             selesai = true;
-        } 
+            window.location.href = "leaderboard.html"; // Arahkan ke halaman leaderboard.html jika waktu habis
+        }
     }
+
     const waktuInterval = setInterval(updateTime, 1000);
     munculkanPokemon(lihat, sembunyi);
 }
-
 // ini untuk memperbarui skor ketika memukul pokemon
 
 function pukul() {
