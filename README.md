@@ -13,7 +13,7 @@
 
 ## Teknologi 
 - HTML, CSS, dan JavaScript untuk logika permainan.
-- Responsive for Mobile 📱
+- Responsif untuk pengguna Smartphone 📱
 
 ## Pengembang 
 - [Rozan Naufal Latukau]()
