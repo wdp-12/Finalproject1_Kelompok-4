@@ -4,7 +4,7 @@
 ## Deskripsi 
 - Aturan Permainan:
 - Setiap pemain yang menangkap pokemon akan mendapatkan 1 poin.
-- Waktu permainan adalah 3 menit.
+- Waktu permainan adalah 2 menit.
 
 ## Fitur 
 - Tingkat kesulitan: Easy, Medium, Hard.
@@ -13,6 +13,7 @@
 
 ## Teknologi 
 - HTML, CSS, dan JavaScript untuk logika permainan.
+- Responsive for Mobile 📱
 
 ## Pengembang 
 - [Rozan Naufal Latukau]()
